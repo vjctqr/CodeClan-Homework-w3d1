@@ -42,6 +42,46 @@ CREATE TABLE people (
 
 -- QUESTION 2. Return ONLY the name column from the 'people' table
 
+--  psql -d marvel -f marvel.sql
+
+-- DROP TABLE
+-- CREATE TABLE
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+--          name         
+-- ----------------------
+--  Homer Simpson
+--  Marge Simpson
+--  Lisa Simpson
+--  Maggie Simpson
+--  Patty Bouvier
+--  Selma Bouvier
+--  Kent Brockman
+--  Ned Flanders
+--  Barney Gumble
+--  Itchy
+--  Eric Cartman
+--  Scratchy
+--  Crusty the Clown
+--  Montgomery Burns
+--  Mayor Joe Quimby
+--  Groundskeeper Willie
+-- (16 rows)
+
 INSERT INTO people (name) VALUES ('Homer Simpson');
 INSERT INTO people (name) VALUES ('Marge Simpson');
 INSERT INTO people (name) VALUES ('Lisa Simpson');
