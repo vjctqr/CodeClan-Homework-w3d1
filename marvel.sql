@@ -9,7 +9,7 @@ DROP TABLE people;
 -- );
 
 CREATE TABLE people (
-	-- id SERIAL PRIMARY KEY,
+	id SERIAL PRIMARY KEY,
 	name VARCHAR(255)
 );
 
@@ -82,6 +82,51 @@ CREATE TABLE people (
 --  Groundskeeper Willie
 -- (16 rows)
 
+-- QUESTION 3. Oops! Someone spelled Krusty The Clown's name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
+
+-- psql -d marvel -f marvel.sql
+
+-- DROP TABLE
+-- CREATE TABLE
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- UPDATE 1
+--  id |         name         
+-- ----+----------------------
+--   1 | Homer Simpson
+--   2 | Marge Simpson
+--   3 | Lisa Simpson
+--   4 | Maggie Simpson
+--   5 | Patty Bouvier
+--   6 | Selma Bouvier
+--   7 | Kent Brockman
+--   8 | Ned Flanders
+--   9 | Barney Gumble
+--  10 | Itchy
+--  11 | Eric Cartman
+--  12 | Scratchy
+--  14 | Montgomery Burns
+--  15 | Mayor Joe Quimby
+--  16 | Groundskeeper Willie
+--  13 | Krusty the Clown
+-- (16 rows)
+
+
+
 INSERT INTO people (name) VALUES ('Homer Simpson');
 INSERT INTO people (name) VALUES ('Marge Simpson');
 INSERT INTO people (name) VALUES ('Lisa Simpson');
@@ -98,6 +143,8 @@ INSERT INTO people (name) VALUES ('Crusty the Clown');
 INSERT INTO people (name) VALUES ('Montgomery Burns');
 INSERT INTO people (name) VALUES ('Mayor Joe Quimby');
 INSERT INTO people (name) VALUES ('Groundskeeper Willie');
+
+UPDATE people SET NAME = 'Krusty the Clown' WHERE id = 13;
 
 -- INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '17:00');
 -- INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '23:55');
