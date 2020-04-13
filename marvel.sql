@@ -325,6 +325,57 @@ CREATE TABLE movies (
 --  20 | Avengers: Infinity War              | 2018 | 00:00
 -- (19 rows)
 
+-- QUESTION 9. 
+
+-- ➜  day_1 git:(master) psql -d marvel -f marvel.sql
+
+-- DROP TABLE
+-- CREATE TABLE
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- DELETE 1
+-- UPDATE 1
+--  id |                title                | year | show_time 
+-- ----+-------------------------------------+------+-----------
+--   1 | Iron Man                            | 2008 | 17:00
+--   2 | The Incredible Hulk                 | 2008 | 23:55
+--   3 | Iron Man 2                          | 2010 | 18:45
+--   4 | Thor                                | 2011 | 15:45
+--   5 | Captain America: The First Avenger  | 2011 | 14:15
+--   6 | Avengers Assemble                   | 2012 | 14:45
+--   8 | Thor: The Dark World                | 2013 | 22:55
+--  10 | Captain America: The Winter Soldier | 2014 | 18:25
+--  11 | Guardians of the Galaxy             | 2014 | 13:10
+--  12 | Avengers: Age of Ultron             | 2015 | 20:20
+--  13 | Ant-Man                             | 2015 | 13:00
+--  14 | Captain America: Civil War          | 2016 | 12:35
+--  15 | Doctor Strange                      | 2016 | 22:00
+--  16 | Guardians of the Galaxy 2           | 2017 | 14:05
+--  17 | Spider-Man: Homecoming              | 2017 | 23:00
+--  18 | Thor: Ragnarok                      | 2017 | 22:10
+--  19 | Black Panther                       | 2018 | 21:00
+--  20 | Avengers: Infinity War              | 2018 | 00:00
+--   7 | Iron Man 3                          | 2013 | 20:45
+-- (19 rows)
+
 
 
 -- INSERT INTO people (name) VALUES ('Homer Simpson');
@@ -371,6 +422,8 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:0
 INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
 
 DELETE FROM movies WHERE title = 'Batman Begins';
+
+UPDATE movies SET show_time = '20:45' WHERE id = 7;
 
    SELECT * FROM movies;
 -- SELECT * FROM people;
