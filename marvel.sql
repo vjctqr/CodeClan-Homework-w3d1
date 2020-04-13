@@ -1,17 +1,17 @@
--- DROP TABLE movies;
-DROP TABLE people;
+DROP TABLE movies;
+-- DROP TABLE people;
 
--- CREATE TABLE movies (
--- 	id SERIAL PRIMARY KEY,
--- 	title VARCHAR(255),
--- 	year INT,
--- 	show_time VARCHAR(255)
--- );
-
-CREATE TABLE people (
-	-- id SERIAL PRIMARY KEY,
-	name VARCHAR(255)
+CREATE TABLE movies (
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(255),
+	year INT,
+	show_time VARCHAR(255)
 );
+
+-- CREATE TABLE people (
+	-- id SERIAL PRIMARY KEY,
+-- 	name VARCHAR(255)
+-- );
 
 -- QUESTION 1. Return ALL the data in the 'movies' table.
 
@@ -137,9 +137,57 @@ CREATE TABLE people (
 --  Homer Simpson
 -- (1 row)
 
+-- QUESTION 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
+
+-- psql -d marvel -f marvel.sql
+
+-- DROP TABLE
+-- CREATE TABLE
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- DELETE 1
+--  id |                title                | year | show_time 
+-- ----+-------------------------------------+------+-----------
+--   1 | Iron Man                            | 2008 | 17:00
+--   2 | The Incredible Hulk                 | 2008 | 23:55
+--   3 | Iron Man 2                          | 2010 | 18:45
+--   4 | Thor                                | 2011 | 15:45
+--   5 | Captain America: The First Avenger  | 2011 | 14:15
+--   6 | Avengers Assemble                   | 2012 | 14:45
+--   7 | Iron Man 3                          | 2013 | 21:55
+--   8 | Thor: The Dark World                | 2013 | 22:55
+--  10 | Captain America: The Winter Soldier | 2014 | 18:25
+--  11 | Guardians of the Galaxy             | 2014 | 13:10
+--  12 | Avengers: Age of Ultron             | 2015 | 20:20
+--  13 | Ant-Man                             | 2015 | 13:00
+--  14 | Captain America: Civil War          | 2016 | 12:35
+--  15 | Doctor Strange                      | 2016 | 22:00
+--  16 | Guardians of the Galaxy 2           | 2017 | 14:05
+--  17 | Spider-Man: Homecoming              | 2017 | 23:00
+--  18 | Thor: Ragnarok                      | 2017 | 22:10
+--  19 | Black Panther                       | 2018 | 21:00
+-- (18 rows)
 
 
-INSERT INTO people (name) VALUES ('Homer Simpson');
+
+-- INSERT INTO people (name) VALUES ('Homer Simpson');
 -- INSERT INTO people (name) VALUES ('Marge Simpson');
 -- INSERT INTO people (name) VALUES ('Lisa Simpson');
 -- INSERT INTO people (name) VALUES ('Maggie Simpson');
@@ -158,25 +206,27 @@ INSERT INTO people (name) VALUES ('Homer Simpson');
 
 -- UPDATE people SET NAME = 'Krusty the Clown' WHERE id = 13;
 
--- INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '17:00');
--- INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '23:55');
--- INSERT INTO movies (title, year, show_time) VALUES ('Iron Man 2', 2010, '18:45');
--- INSERT INTO movies (title, year, show_time) VALUES ('Thor', 2011, '15:45');
--- INSERT INTO movies (title, year, show_time) VALUES ('Captain America: The First Avenger', 2011, '14:15');
--- INSERT INTO movies (title, year, show_time) VALUES ('Avengers Assemble', 2012, '14:45');
--- INSERT INTO movies (title, year, show_time) VALUES ('Iron Man 3', 2013, '21:55');
--- INSERT INTO movies (title, year, show_time) VALUES ('Thor: The Dark World', 2013, '22:55');
--- INSERT INTO movies (title, year, show_time) VALUES ('Batman Begins', 2005, '13:40');
--- INSERT INTO movies (title, year, show_time) VALUES ('Captain America: The Winter Soldier', 2014, '18:25');
--- INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy', 2014, '13:10');
--- INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Age of Ultron', 2015, '20:20');
--- INSERT INTO movies (title, year, show_time) VALUES ('Ant-Man', 2015, '13:00');
--- INSERT INTO movies (title, year, show_time) VALUES ('Captain America: Civil War', 2016, '12:35');
--- INSERT INTO movies (title, year, show_time) VALUES ('Doctor Strange', 2016, '22:00');
--- INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2017, '14:05');
--- INSERT INTO movies (title, year, show_time) VALUES ('Spider-Man: Homecoming', 2017, '23:00');
--- INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '22:10');
--- INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:00');
+INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '17:00');
+INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '23:55');
+INSERT INTO movies (title, year, show_time) VALUES ('Iron Man 2', 2010, '18:45');
+INSERT INTO movies (title, year, show_time) VALUES ('Thor', 2011, '15:45');
+INSERT INTO movies (title, year, show_time) VALUES ('Captain America: The First Avenger', 2011, '14:15');
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers Assemble', 2012, '14:45');
+INSERT INTO movies (title, year, show_time) VALUES ('Iron Man 3', 2013, '21:55');
+INSERT INTO movies (title, year, show_time) VALUES ('Thor: The Dark World', 2013, '22:55');
+INSERT INTO movies (title, year, show_time) VALUES ('Batman Begins', 2005, '13:40');
+INSERT INTO movies (title, year, show_time) VALUES ('Captain America: The Winter Soldier', 2014, '18:25');
+INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy', 2014, '13:10');
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Age of Ultron', 2015, '20:20');
+INSERT INTO movies (title, year, show_time) VALUES ('Ant-Man', 2015, '13:00');
+INSERT INTO movies (title, year, show_time) VALUES ('Captain America: Civil War', 2016, '12:35');
+INSERT INTO movies (title, year, show_time) VALUES ('Doctor Strange', 2016, '22:00');
+INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2017, '14:05');
+INSERT INTO movies (title, year, show_time) VALUES ('Spider-Man: Homecoming', 2017, '23:00');
+INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '22:10');
+INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:00');
 
--- SELECT * FROM movies;
-SELECT * FROM people;
+DELETE FROM movies WHERE TITLE = 'Batman Begins';
+
+SELECT * FROM movies;
+-- SELECT * FROM people;
