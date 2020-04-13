@@ -9,7 +9,7 @@ DROP TABLE people;
 -- );
 
 CREATE TABLE people (
-	id SERIAL PRIMARY KEY,
+	-- id SERIAL PRIMARY KEY,
 	name VARCHAR(255)
 );
 
@@ -125,26 +125,38 @@ CREATE TABLE people (
 --  13 | Krusty the Clown
 -- (16 rows)
 
+-- Question 4. Return ONLY Homer Simpson's name from the 'people' table.
+
+-- psql -d marvel -f marvel.sql
+
+-- DROP TABLE
+-- CREATE TABLE
+-- INSERT 0 1
+--      name      
+-- ---------------
+--  Homer Simpson
+-- (1 row)
+
 
 
 INSERT INTO people (name) VALUES ('Homer Simpson');
-INSERT INTO people (name) VALUES ('Marge Simpson');
-INSERT INTO people (name) VALUES ('Lisa Simpson');
-INSERT INTO people (name) VALUES ('Maggie Simpson');
-INSERT INTO people (name) VALUES ('Patty Bouvier');
-INSERT INTO people (name) VALUES ('Selma Bouvier');
-INSERT INTO people (name) VALUES ('Kent Brockman');
-INSERT INTO people (name) VALUES ('Ned Flanders');
-INSERT INTO people (name) VALUES ('Barney Gumble');
-INSERT INTO people (name) VALUES ('Itchy');
-INSERT INTO people (name) VALUES ('Eric Cartman');
-INSERT INTO people (name) VALUES ('Scratchy');
-INSERT INTO people (name) VALUES ('Crusty the Clown');
-INSERT INTO people (name) VALUES ('Montgomery Burns');
-INSERT INTO people (name) VALUES ('Mayor Joe Quimby');
-INSERT INTO people (name) VALUES ('Groundskeeper Willie');
+-- INSERT INTO people (name) VALUES ('Marge Simpson');
+-- INSERT INTO people (name) VALUES ('Lisa Simpson');
+-- INSERT INTO people (name) VALUES ('Maggie Simpson');
+-- INSERT INTO people (name) VALUES ('Patty Bouvier');
+-- INSERT INTO people (name) VALUES ('Selma Bouvier');
+-- INSERT INTO people (name) VALUES ('Kent Brockman');
+-- INSERT INTO people (name) VALUES ('Ned Flanders');
+-- INSERT INTO people (name) VALUES ('Barney Gumble');
+-- INSERT INTO people (name) VALUES ('Itchy');
+-- INSERT INTO people (name) VALUES ('Eric Cartman');
+-- INSERT INTO people (name) VALUES ('Scratchy');
+-- INSERT INTO people (name) VALUES ('Crusty the Clown');
+-- INSERT INTO people (name) VALUES ('Montgomery Burns');
+-- INSERT INTO people (name) VALUES ('Mayor Joe Quimby');
+-- INSERT INTO people (name) VALUES ('Groundskeeper Willie');
 
-UPDATE people SET NAME = 'Krusty the Clown' WHERE id = 13;
+-- UPDATE people SET NAME = 'Krusty the Clown' WHERE id = 13;
 
 -- INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '17:00');
 -- INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '23:55');
