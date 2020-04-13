@@ -230,6 +230,51 @@ CREATE TABLE people (
 --  13 | Krusty the Clown
 -- (17 rows)
 
+-- QUESTION 7. Eric Cartman has decided to hijack our movie evening, Remove him from the table of people.
+
+-- ➜  day_1 git:(master) psql -d marvel -f marvel.sql
+
+-- DROP TABLE
+-- CREATE TABLE
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- INSERT 0 1
+-- UPDATE 1
+-- DELETE 1
+--  id |         name         
+-- ----+----------------------
+--   1 | Homer Simpson
+--   2 | Marge Simpson
+--   3 | Lisa Simpson
+--   4 | Maggie Simpson
+--   5 | Patty Bouvier
+--   6 | Selma Bouvier
+--   7 | Kent Brockman
+--   8 | Ned Flanders
+--   9 | Barney Gumble
+--  10 | Itchy
+--  12 | Scratchy
+--  14 | Montgomery Burns
+--  15 | Mayor Joe Quimby
+--  16 | Groundskeeper Willie
+--  17 | Bart Simpson
+--  13 | Krusty the Clown
+-- (16 rows)
+
 
 
 INSERT INTO people (name) VALUES ('Homer Simpson');
@@ -251,6 +296,8 @@ INSERT INTO people (name) VALUES ('Groundskeeper Willie');
 INSERT INTO People (name) VALUES ('Bart Simpson');
 
 UPDATE people SET NAME = 'Krusty the Clown' WHERE id = 13;
+
+DELETE FROM people WHERE NAME = 'Eric Cartman';
 
 -- INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '17:00');
 -- INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '23:55');
